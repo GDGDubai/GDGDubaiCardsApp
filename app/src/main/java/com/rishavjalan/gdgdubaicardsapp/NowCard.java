@@ -1,5 +1,7 @@
 package com.rishavjalan.gdgdubaicardsapp;
 
+import android.net.Uri;
+
 /**
  * Created by rishavjalan on 13/02/16.
  */
@@ -20,9 +22,16 @@ public class NowCard
       return content;
    }
 
+   public NowCard(String title, String content, String imageUrl) {
+      this.title = title;
+      this.content = content;
+      this.imageUrl = imageUrl;
+   }
+
    public NowCard(String title, String content) {
       this.title = title;
       this.content = content;
+      this.imageUrl="https://raw.githubusercontent.com/facebook/fresco/gh-pages/static/fresco-logo.png";
    }
 
    public void setContent(String content) {
@@ -37,5 +46,5 @@ public class NowCard
       this.title = title;
    }
 
-   private String imageUrl;
+   private String imageUrl="ic_launcher";
 }
