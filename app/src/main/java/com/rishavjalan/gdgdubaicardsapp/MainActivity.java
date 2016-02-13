@@ -18,6 +18,21 @@ public class MainActivity extends AppCompatActivity {
       Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
       setSupportActionBar(toolbar);
 
+
+   }
+
+   protected void init(){
+      initView();
+   }
+   protected void initView(){
+      initToolbar();
+      initFab();
+   }
+   protected void initToolbar(){
+      Toolbar toolbar =(Toolbar)findViewById(R.id.toolbar);
+      setSupportActionBar(toolbar);
+   }
+   protected void initFab(){
       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
       fab.setOnClickListener(new View.OnClickListener() {
          @Override
@@ -27,11 +42,6 @@ public class MainActivity extends AppCompatActivity {
          }
       });
    }
-
-   protected void init(){}
-   protected void initView(){}
-   protected void initToolbar(){}
-   protected void initFab(){}
 
    @Override
    public boolean onCreateOptionsMenu(Menu menu) {
