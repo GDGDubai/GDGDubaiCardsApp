@@ -20,6 +20,11 @@ public class NowCard
       return content;
    }
 
+   public NowCard(String title, String content) {
+      this.title = title;
+      this.content = content;
+   }
+
    public void setContent(String content) {
       this.content = content;
    }
